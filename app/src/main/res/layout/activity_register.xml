@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.RegisterActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="113dp"
+            tools:layout_editor_absoluteY="169dp">
+
+            <!-- Registro -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txt_registro"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Codigo Cliente -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txt_codigocliente" />
+
+            <EditText
+                android:id="@+id/et_codc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:ems="8"
+                android:inputType="number"
+                android:maxEms="8"
+                android:minHeight="48dp"
+                android:required="true"
+                tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+
+            <!-- RxPower -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txt_rxpower" />
+
+            <EditText
+                android:id="@+id/et_rxdn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:ems="6"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxEms="6"
+                android:minHeight="48dp"
+                android:required="true"
+                tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+
+            <!-- TxPower -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txt_txpower" />
+
+            <EditText
+                android:id="@+id/et_txdn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:ems="6"
+                android:inputType="numberSigned|numberDecimal"
+                android:maxEms="6"
+                android:minHeight="48dp"
+                android:required="true"
+                tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+
+            <!-- Temperatura -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txt_temperatura" />
+
+            <EditText
+                android:id="@+id/et_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:ems="5"
+                android:inputType="numberDecimal"
+                android:maxEms="5"
+                android:minHeight="48dp"
+                android:required="true"
+                tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+
+            <Button
+                android:id="@+id/btnGuardar"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="80dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/txt_guardar" />
+
+            <Button
+                android:id="@+id/btCancelar"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="80dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/xt_cancelar" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

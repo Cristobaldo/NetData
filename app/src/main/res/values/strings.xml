@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">NetData</string>
+    <string name="nuevo_registro">Nuevo Registro</string>
+
+    <string name="txt_registro">Registro</string>
+    <string name="txt_idactividad">Id Actividad</string>
+    <string name="txt_codigocliente">Codigo Cliente</string>
+    <string name="txt_tecnologia">Tecnologia</string>
+    <string name="txt_zona">Zona</string>
+    <string name="txt_numero_serial">Numero Serial Dispositivo</string>
+    <string name="txt_rxpower">RxPower</string>
+    <string name="txt_txpower">TxPower</string>
+    <string name="txt_temperatura">Temperatura</string>
+    <string name="hint_codigo_cliente">Codigo del cliente</string>
+    <string name="txt_guardar">Guardar</string>
+    <string name="xt_cancelar">Cancelar</string>
+    <string name="txt_infodn">Información del dispositivo</string>
+    <string name="txt_param">Parametros del dispositivo</string>
+    <string name="txt_valores">Valores Optimos</string>
+    <string name="vo_rxpower">-25 a -19 dBm</string>
+    <string name="vo_txpower">0.5 a 5 dBm</string>
+    <string name="vo_temperatura">37 a 48 °C</string>
+    <string name="txt_volver">Ir a Registro</string>
+    <string name="txt_zonal">Zona</string>
+    <string name="txt_cod_cliente">Código de cliente</string>
+    <string name="txt_buscar">Ordenar</string>
+
+
+</resources>

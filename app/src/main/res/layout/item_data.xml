@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="28dp"
+        android:lineHeight="20dp"
+        android:maxLines="3"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1000" />
+
+    <TextView
+        android:id="@+id/tvcod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/tvid"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/tvid"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Client Code: 000000000" />
+
+    <TextView
+        android:id="@+id/tvdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/tvid"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/tvid"
+        app:layout_constraintTop_toBottomOf="@+id/tvcod"
+        tools:text="Zone: LIMA | Serial Number: 00:AA:00:AA:00:AA" />
+
+    <TextView
+        android:id="@+id/tvmetrics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:lineHeight="16sp"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/tvid"
+        app:layout_constraintTop_toBottomOf="@+id/tvdetails"
+        tools:text="Rx: -00.00 | Tx: -00.00 | Temp: -00.0 °C" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

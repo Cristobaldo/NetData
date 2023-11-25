@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.VerifyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/txt_infodn"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Codigo de Cliente -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_cod_cliente"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_codc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="000000000"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"/>
+
+        <!-- Numero Serial -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_numero_serial"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_sndn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="00:AA:00:AA:00:AA"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"/>
+
+        <!-- Zona -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_zonal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_zone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="LIMA"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/txt_param"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- RxPower -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_rxpower"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_rxdn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="45456"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp" />
+
+        <!-- TxPower -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_txpower"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_txdn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="45456"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp" />
+
+        <!-- Temperatura -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_temperatura"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="45456"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/txt_valores"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- RxPower -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_rxpower"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vo_rxpower"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp" />
+
+        <!-- TxPower -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_txpower"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vo_txpower"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp" />
+
+        <!-- RxPowerTemperatura -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_temperatura"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vo_temperatura"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/btnVolver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/txt_volver" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
